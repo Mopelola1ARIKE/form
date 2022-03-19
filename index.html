@@ -1,65 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPEhtml>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CapacityBay Survey Form</title>
+        <link rel="stylesheet" href="style.css">
 
-</head>
+    </head>
 
-<body>
-    <main>
+    <body>
+        <main>
         <div class="container">
-            <img src="bgimage.jpg" alt="background">
-            <div class="form">
-                <form action="">
-                    <h1> CapacityBay Survey form</h1>
-                    <p2>Thank you for taking the time to help us improve the paltform</p2>
-                    <label for="name"> Name:</label>
-                    <textarea name="your message" id=""> Name </textarea>
-                    <label for="Email">Email</label>
-                    <textarea name="your message" id="">Enter your Email </textarea>
-                    <label for="Age(Optional)"> Age(optional)</label>
-                    <textarea name="your message" id="">Age </textarea>
-                    <label for="Select current role" ?>Which option best describe your current role </label>
-                    <textarea name="your message" id="">select current role </textarea>
-                    <p2>Would you recommend CapacityBay to a friend</p2>
-                    <input type="radio" name="Definitely"> Definitely
-                    <input type="radio" name="maybe"> maybe
-                    <input type="radio" name="Not sure"> Not sure
-                    <label for="What is your favourite feature of CapacityBay"> What is your favourite feature of
-                        capacityBay</label>
-                    <select name="what is your favourite feature of capacityBay" id="">
-                        <option value="challenges" name="challenges"> challenges</option>
-                        <option value="projects" name="projects"> projects</option>
-                        <option value="community" name="community"> community</option>
-                        <option value="open source" name="open source"> open source</option>
-                        <option value="select an option" name="select an option"> select an option</option>
-                    </select>
-                    <p2>What will you like to see improved?(Check all that apply)</p2>
-                    <input type="radio" name="Front-end project"> Front-end project
-                    <input type="radio" name="Back-end project"> Back-end project
-                    <input type="radio" name="Data visualization"> Data Visualization
-                    <input type="radio" name="Open source community"> Open source community
-                    <input type="radio" name="Gitter help-rooms"> Gitter help-rooms
-                    <input type="radio" name="Videos"> Videos
-                    <input type="radio" name="City Meetup"> City Meetup
-                    <input type="radio" name="Wiki"> Wiki
-                    <input type="radio" name="Forum"> Forum
-                    <input type="radio" name="Additional course"> Additional course
-                    </select>
-                    <label for="Enter your comment here"> Any comments or suggestions?</label>
-                    <textarea name="your message" id="">Enter your comment here </textarea>
-                    <button type="submit"> submit</button>
-
-                </form>
+            <div class="Sam-wrapp">
+                <h1> CapacityBay Survey form</h1>
+                <p>Thank you for taking the time to help us improve the paltform</p>
+                <div class="form-wrapper">
+                    <form action="#">
+                        <label for="name"> Name:</label>
+                        <input type="name" placeholder="Enter your name">
+                        <label for="Email">Email</label>
+                        <input type="Email" placeholder="Enter your email">
+                        <label for="Age"> Age(optional)</label>
+                        <input type="Age" placeholder="Enter your Age">
+                        <label for=" role" ?>Which option best describe your current role </label>
+                        <select name="role">
+                            <option value="select" disabled> select current role</option>
+                            <option value="student"> student</option>
+                            <option value="full time job"> full time job</option>
+                            <option value="full time learner">full time learner</option>
+                            <option value="Prefer not to say"> Prefer not to say</option>
+                            <option value="Others"> Others</option>
+                        </select>
+                        <label for="refer">Would you recommend CapacityBay to a friend</label>
+                        <input type="radio" name="Definitely"> Definitely<br>
+                        <input type="radio" name="maybe"> maybe<br>
+                        <input type="radio" name="Not sure"> Not sure<br>
+                        <label for="What is your favourite feature of CapacityBay"> 
+                            What is your favourite feature of
+                            capacityBay</label>
+                        <select name="what is your favourite feature of capacityBay" id="">
+                            <option value="challenges" name="challenges"> challenges</option>
+                            <option value="projects" name="projects"> projects</option>
+                            <option value="community" name="community"> community</option>
+                            <option value="open source" name="open source"> open source</option>
+                            <option value="select an option" name="select an option"> select an option</option>
+                        </select>
+                        <label for="suggestion">What would you like to see improved?(Check all that apply)</label>
+                        <input type="checkbox" name="suggestion"> Front-end project
+                        <input type="checkbox" name="suggestion"> Back-end project
+                        <input type="checkbox" name="suggestion"> Data Visualization
+                        <input type="checkbox" name="suggestion"> Open source community
+                        <input type="checkbox" name="suggestion"> Gitter help-rooms
+                        <input type="checkbox" name="suggestion"> Videos
+                        <input type="checkbox" name="suggestion"> City Meetup
+                        <input type="checkbox" name="suggestion"> Wiki
+                        <input type="checkbox" name="suggestion"> Forum
+                        <input type="checkbox" name="suggestion"> Additional course
+                        </select>
+                        <label for="comments"> Any comments or suggestions?</label>
+                        <textarea name="your message" id="" cols="30" rows="10">Enter your comment here... </textarea>
+                        <button type="submit"> submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
 
-</body>
+    </body>
 
-</html>
+    </html>
